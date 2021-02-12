@@ -1,0 +1,45 @@
+.name-box {
+    font-family: 'Oswald', sans-serif;
+    color: #EEE;
+    background-color: rgb(0, 110, 110);
+    width: 720px;
+    height: 200px;
+    padding: 10px;
+}
+
+.name {
+    font-size: 6em;
+    word-spacing: 100vw;
+    line-height: 0.8em;
+}
+
+.subtitle {
+    font-weight: 200;
+    letter-spacing: 0.6em;
+}
+
+@media (max-width: 720px) {
+    .name-box {
+        width: 480px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .name-box {
+        width: 320px;
+        height: 180px;
+    }
+    .name {
+        font-size: 4.2em;
+        word-spacing: 100vw;
+        line-height: 0.8em;
+    }
+    .subtitle {
+        letter-spacing: 0.8em;
+    }
+    .bar {
+        display: none;
+    }
+}
