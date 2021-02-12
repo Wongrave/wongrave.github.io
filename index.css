@@ -2,9 +2,10 @@
     font-family: 'Oswald', sans-serif;
     color: #EEE;
     background-color: rgb(0, 110, 110);
-    width: 720px;
+    width: 460px;
     height: 200px;
     padding: 10px;
+    float: left;
 }
 
 .name {
@@ -18,11 +19,40 @@
     letter-spacing: 0.6em;
 }
 
+.socials {
+    float: right;
+}
+
+.div-photo {
+    float: right;
+    width: 220px;
+}
+
+.img-photo {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
 @media (max-width: 720px) {
     .name-box {
-        width: 480px;
+        width: 440px;
         margin: auto;
         text-align: center;
+        float: none;
+    }
+    .div-photo {
+        float: none;
+        margin: auto;
+        width: 340px;
+    }
+    .img-photo {
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        border-radius: 150px;
     }
 }
 
@@ -41,5 +71,14 @@
     }
     .bar {
         display: none;
+    }
+    .div-photo {
+        width: 240px;
+    }
+    .img-photo {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border-radius: 100px;
     }
 }
