@@ -1,3 +1,8 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .name-box {
     font-family: 'Oswald', sans-serif;
     color: #EEE;
@@ -5,7 +10,6 @@
     width: 460px;
     height: 200px;
     padding: 10px;
-    float: left;
 }
 
 .name {
@@ -20,11 +24,9 @@
 }
 
 .socials {
-    float: right;
 }
 
 .div-photo {
-    float: right;
     width: 220px;
 }
 
@@ -33,10 +35,76 @@
     height: 200px;
     margin: 10px;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 50%;
+}
+
+.info {
+    width: 100vw;
+    min-width: 300px;
+    height: 200px;
+    margin: auto;
+    background-color: blue;
+    text-align: center;
+}
+
+.languages {
+    width: 420px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+
+}
+
+.lang-items ul {
+    text-align: right;
+}
+
+.languages div {
+    display: table-cell;
+}
+
+.lang-items {
+    width: 210px;
+    padding-right: 5px;
+}
+
+.lang-values {
+    width: 210px;
+    padding-left: 5px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    line-height: 40px;
+    font-size: 1.6em;
+}
+
+li .filled {
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    background-color: rgb(0, 110, 110);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+li .empty {
+    height: 16px;
+    width: 16px;
+    margin: 0px 5px;
+    border: 2px rgb(0, 110, 110) solid;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 @media (max-width: 720px) {
+    header {
+        display: block;
+        
+    }
     .name-box {
         width: 440px;
         margin: auto;
@@ -52,7 +120,11 @@
         width: 300px;
         height: 300px;
         margin: 20px;
-        border-radius: 150px;
+    }
+
+    .languages {
+        border-top: 3px rgb(0, 110, 110) solid;
+        border-radius: 3px;
     }
 }
 
@@ -79,6 +151,17 @@
         width: 200px;
         height: 200px;
         margin: 20px;
-        border-radius: 100px;
+    }
+
+    .languages {
+        width: 320px;
+    }
+
+    .lang-items {
+        width: 160px;
+    }
+    
+    .lang-values {
+        width: 160px;
     }
 }
