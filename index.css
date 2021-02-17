@@ -1,67 +1,46 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.name-box {
+.experience {
     font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    width: 80vw;
+    height: 420px;
+    background-color: var(--primary);
+    margin: 10px 0px 10px auto;
+    padding: 20px;
+    color: #DDD;
+    font-weight: 300;
+}
+
+section .section-header {
     color: #EEE;
-    background-color: rgb(0, 110, 110);
-    width: 420px;
-    min-width: 420px;
-    height: 200px;
-    padding: 10px;
-}
-
-.name {
-    font-size: 6em;
-    word-spacing: 100vw;
-    line-height: 0.8em;
-}
-
-.subtitle {
+    font-size: 2.4em;
     font-weight: 200;
-    letter-spacing: 0.6em;
+    /* border-bottom: 2px var(--secondary-dark) solid; */
 }
 
-.description {
-    text-align: center;
-    font-family: 'Benne', serif;
+article {
+    border-left: 3px var(--tertiary) groove;
+    line-height: 1.2em;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+article header {
     font-size: 1.4em;
-    line-height: 1.4em;
-    width: 400px;
-    min-width: 400px;
-    max-width: 680px;
-    margin: auto;
-    order: 2;
-    padding: 34px;
+    font-weight: 300;
     
 }
 
-/* .socials {
-} */
-
-.div-photo {
-    width: 220px;
-    order: 3;
-}
-
-.img-photo {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
 .info {
-    width: 100vw;
-    min-width: 300px;
-    height: 200px;
+    display: none;
+    color: var(--primary);
+    font-family: 'Benne', serif;
+    font-weight: 500;
+    width: 320px;
+    min-width: 320px;
     margin: auto;
-    background-color: blue;
     text-align: center;
+    font-size: 1.2em;
+    line-height: 0.6em;
 }
 
 .languages {
@@ -103,7 +82,7 @@ li .filled {
     height: 20px;
     width: 20px;
     margin: 0px 5px;
-    background-color: rgb(0, 110, 110);
+    background-color: var(--tertiary);
     border-radius: 50%;
     display: inline-block;
 }
@@ -112,13 +91,19 @@ li .empty {
     height: 16px;
     width: 16px;
     margin: 0px 5px;
-    border: 2px rgb(0, 110, 110) solid;
+    border: 2px var(--tertiary) solid;
     border-radius: 50%;
     display: inline-block;
 }
 
-@media (max-width: 1142px) {
+footer {
+    background-color: var(--secondary-dark);
+}
 
+@media (max-width: 1142px) {
+    .experience {
+        width: 90vw;
+    }
     .description {
         order: 3;
         display: block;
@@ -127,7 +112,10 @@ li .empty {
 }
 
 @media (max-width: 720px) {
-    header {
+    .experience {
+        width: 420px;
+    }
+    body header {
         display: block;
     }
     .name-box {
@@ -148,14 +136,22 @@ li .empty {
     .description {
         width: 320px;
         min-width: 320px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .languages {
         border-top: 3px rgb(0, 110, 110) solid;
         border-radius: 3px;
     }
+    .info {
+        display: block;
+    }
 }
 
 @media (max-width: 480px) {
+    .experience {
+        width: 300px;
+    }
     .name-box {
         width: 320px;
         min-width: 320px;

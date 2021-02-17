@@ -1,4 +1,12 @@
+:root {
+    --primary: #3094BA;
+    --primary-dark: #2E69B0;
+    --secondary: #30BA96;
+    --secondary-dark: #2EB069;
+    --tertiary: #32A1A3;
+}
+
 body {
-    background-color: #EEE;
-    
+    background-color: #EFF;
+    margin: 0;
 }
