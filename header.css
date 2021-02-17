@@ -6,8 +6,8 @@ body header {
 
 .name-box {
     font-family: 'Oswald', sans-serif;
-    color: #EEE;
-    background-color: var(--primary-dark);
+    color: var(--text-light);
+    background-color: var(--primary);
     width: 420px;
     min-width: 420px;
     height: 200px;

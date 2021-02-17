@@ -3,31 +3,58 @@
     font-size: 1.6em;
     width: 80vw;
     height: 420px;
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     margin: 10px 0px 10px auto;
     padding: 20px;
-    color: #DDD;
+    color: var(--text-light);
+    font-weight: 300;
+
+}
+
+.education {
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    width: 80vw;
+    height: 420px;
+    background-color: var(--secondary);
+    margin: 10px auto 10px 0px;
+    padding: 20px;
+    color: var(--text-dark);
     font-weight: 300;
 }
 
 section .section-header {
-    color: #EEE;
+    color: var(--text-light);
     font-size: 2.4em;
     font-weight: 200;
     /* border-bottom: 2px var(--secondary-dark) solid; */
 }
 
-article {
-    border-left: 3px var(--tertiary) groove;
+.education .section-header {
+    color: var(--text-dark);
+    display: inline;
+    text-align: right;
+}
+
+.experience article {
+    border-left: 3px var(--secondary-dark) groove;
     line-height: 1.2em;
     margin: 10px 0px;
     padding-left: 10px;
 }
 
+.education article {
+    border-right: 3px var(--secondary-dark) groove;
+    line-height: 1.2em;
+    margin: 10px 0px;
+    padding-right: 10px;
+}
+
 article header {
     font-size: 1.4em;
     font-weight: 300;
-    
+    display: block;
 }
 
 .info {
@@ -46,6 +73,7 @@ article header {
 .languages {
     width: 420px;
     margin: auto;
+    color: var(--text-light);
 }
 
 ul {
@@ -96,8 +124,32 @@ li .empty {
     display: inline-block;
 }
 
+.knowledges {
+    margin: 40px auto;
+    width: 720px;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Benne', serif;
+}
+
+.knowledges header {
+    display: inline;
+    font-size: 1.4em;
+}
+
 footer {
     background-color: var(--secondary-dark);
+    height: 150px;
+    border-top-left-radius: 100px;
+    text-align: right;
+    padding: 20px;
+}
+
+.footer-info {
+    font-family: 'Benne', serif;
+    color: var(--text-dark);
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 @media (max-width: 1142px) {
@@ -113,6 +165,9 @@ footer {
 
 @media (max-width: 720px) {
     .experience {
+        width: 420px;
+    }
+    .education {
         width: 420px;
     }
     body header {
@@ -140,16 +195,28 @@ footer {
         padding-bottom: 0px;
     }
     .languages {
-        border-top: 3px rgb(0, 110, 110) solid;
+        margin: 20px auto;
+        border-left: 3px rgb(0, 110, 110) solid;
         border-radius: 3px;
+    }
+    .footer-info {
+        display: none;
     }
     .info {
         display: block;
+    }
+    .knowledges {
+        margin: 40px auto;
+        width: 420px;
+        font-size: 1.4em;
     }
 }
 
 @media (max-width: 480px) {
     .experience {
+        width: 300px;
+    }
+    .education {
         width: 300px;
     }
     .name-box {
@@ -192,5 +259,12 @@ footer {
     
     .lang-values {
         width: 160px;
+    }
+    .knowledges {
+        border-right: 3px rgb(0, 110, 110) solid;
+        margin: 24px auto;
+        padding: 10px;
+        width: 320px;
+        font-size: 1.2em;
     }
 }
