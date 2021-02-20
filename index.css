@@ -1,7 +1,7 @@
 .experience {
     font-family: 'Oswald', sans-serif;
     font-size: 1.6em;
-    width: 80vw;
+    width: 85vw;
     height: 420px;
     background-color: var(--primary-dark);
     margin: 10px 0px 10px auto;
@@ -15,7 +15,7 @@
     text-align: right;
     font-family: 'Oswald', sans-serif;
     font-size: 1.6em;
-    width: 80vw;
+    width: 90vw;
     height: 420px;
     background-color: var(--tertiary);
     margin: 10px auto 10px 0px;
